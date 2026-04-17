@@ -164,10 +164,10 @@ export default function BuyPage() {
   ];
 
   const includes = [
-    { icon: "🎧", label: "WH-1000XM6 Headphones" },
-    { icon: "💼", label: "Collapsible Carrying Case" },
-    { icon: "⚡", label: "USB-C Charging Cable" },
-    { icon: "🔌", label: "3.5mm Headphone Cable" }
+    { label: "WH-1000XM6 Headphones" },
+    { label: "Collapsible Carrying Case" },
+    { label: "USB-C Charging Cable" },
+    { label: "3.5mm Headphone Cable" }
   ];
 
   const retailers = [
@@ -401,7 +401,6 @@ export default function BuyPage() {
                   key={i} 
                   className="flex items-center gap-6 p-4 rounded-2xl bg-white/[0.02] border border-white/5"
                 >
-                  <span className="text-3xl grayscale opacity-70">{item.icon}</span>
                   <span className="text-lg text-white/80 font-medium">{item.label}</span>
                 </motion.div>
               ))}
@@ -469,9 +468,9 @@ export default function BuyPage() {
         <h3 className="text-center text-2xl font-bold text-white/90 mb-12">Why buy directly from us?</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { icon: "🛡️", t: "2 Year Warranty", d: "Extended protection standard on all direct purchases." },
-            { icon: "🔄", t: "30 Day Returns", d: "Not entirely completely satisfied? Send them back for free." },
-            { icon: "📦", t: "Express Shipping", d: "Expedited shipping is included on all headphone orders." }
+            { t: "2 Year Warranty", d: "Extended protection standard on all direct purchases." },
+            { t: "30 Day Returns", d: "Not entirely completely satisfied? Send them back for free." },
+            { t: "Express Shipping", d: "Expedited shipping is included on all headphone orders." }
           ].map((feat, i) => (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -481,7 +480,6 @@ export default function BuyPage() {
               key={i}
               className="p-8 rounded-3xl bg-[#08080A] border border-white/5 text-center flex flex-col items-center group hover:border-[#0050ff]/50 transition-colors"
             >
-              <span className="text-4xl mb-4 grayscale opacity-80 group-hover:scale-110 transition-transform">{feat.icon}</span>
               <h4 className="text-xl font-bold text-white mb-2">{feat.t}</h4>
               <p className="text-white/50">{feat.d}</p>
             </motion.div>

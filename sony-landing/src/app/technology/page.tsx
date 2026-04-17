@@ -267,7 +267,6 @@ export default function TechnologyPage() {
               </p>
               
               <div className="p-6 bg-white/[0.03] border border-white/10 rounded-2xl flex items-start gap-4">
-                 <div className="text-[#00d6ff] text-2xl mt-1">⚡</div>
                  <div>
                    <h4 className="text-white font-bold mb-1">Quick Charge</h4>
                    <p className="text-sm text-white/60">Need power fast? Just 3 minutes on the charger gives you up to 3 hours of playback time.</p>

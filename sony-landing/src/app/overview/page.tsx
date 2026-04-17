@@ -24,12 +24,12 @@ export default function OverviewPage() {
   };
 
   const features = [
-    { title: "30hr Battery", desc: "Listen longer with massive power reserves, plus quick charging capabilities.", icon: "🔋" },
-    { title: "Industry-leading ANC", desc: "Dual noise sensor technology blocks out the world more effectively than ever.", icon: "🔇" },
-    { title: "LDAC Hi-Res Audio", desc: "Lossless audio streaming for an uncompromised high-fidelity experience.", icon: "🎵" },
-    { title: "Multipoint Connection", desc: "Seamlessly pair and switch between two Bluetooth devices simultaneously.", icon: "🔄" },
-    { title: "Speak-to-Chat", desc: "Music naturally pauses when you start speaking, letting ambient sound in.", icon: "🗣️" },
-    { title: "Wearing Detection", desc: "Headphones automatically pause playback when removed to save battery.", icon: "🎧" }
+    { title: "30hr Battery", desc: "Listen longer with massive power reserves, plus quick charging capabilities." },
+    { title: "Industry-leading ANC", desc: "Dual noise sensor technology blocks out the world more effectively than ever." },
+    { title: "LDAC Hi-Res Audio", desc: "Lossless audio streaming for an uncompromised high-fidelity experience." },
+    { title: "Multipoint Connection", desc: "Seamlessly pair and switch between two Bluetooth devices simultaneously." },
+    { title: "Speak-to-Chat", desc: "Music naturally pauses when you start speaking, letting ambient sound in." },
+    { title: "Wearing Detection", desc: "Headphones automatically pause playback when removed to save battery." }
   ];
 
   const colors = [
@@ -104,7 +104,6 @@ export default function OverviewPage() {
               <div className="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-br from-[#0050ff] to-[#00d6ff] opacity-0 group-hover:opacity-30 transition-opacity duration-500 mask-border" style={{ WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)', WebkitMaskComposite: 'xor', maskComposite: 'exclude' }} />
               
               <div className="relative z-10 flex flex-col h-full">
-                <span className="text-4xl mb-6 opacity-80 group-hover:scale-110 transition-transform duration-500 origin-left">{opt.icon}</span>
                 <h3 className="text-xl font-bold text-white/90 mb-3 tracking-tight">{opt.title}</h3>
                 <p className="text-base text-white/50 leading-relaxed font-medium">{opt.desc}</p>
               </div>

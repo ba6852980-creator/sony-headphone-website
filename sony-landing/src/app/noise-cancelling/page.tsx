@@ -103,9 +103,9 @@ export default function NoiseCancellingPage() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
   
   const steps = [
-    { title: "Capture", desc: "Dual sensor microphones detect ambient noise on the headphone's surface.", icon: "🎙️" },
-    { title: "Process", desc: "The QN3 processor analyzes the noise profile in real-time, 100,000 times a second.", icon: "⚡" },
-    { title: "Cancel", desc: "A precise inverse sound wave is generated, canceling out the unwanted noise instantly.", icon: "🔇" }
+    { title: "Capture", desc: "Dual sensor microphones detect ambient noise on the headphone's surface." },
+    { title: "Process", desc: "The QN3 processor analyzes the noise profile in real-time, 100,000 times a second." },
+    { title: "Cancel", desc: "A precise inverse sound wave is generated, canceling out the unwanted noise instantly." }
   ];
 
   const modes = [
@@ -184,7 +184,6 @@ export default function NoiseCancellingPage() {
               <div className="absolute -top-10 -right-10 text-[150px] font-bold text-white/[0.03] pointer-events-none transition-transform duration-500 group-hover:scale-110">
                 {i + 1}
               </div>
-              <div className="text-3xl mb-6">{step.icon}</div>
               <h3 className="text-2xl font-bold text-white/90 mb-4">{step.title}</h3>
               <p className="text-white/60 leading-relaxed relative z-10">{step.desc}</p>
             </motion.div>
@@ -307,7 +306,6 @@ export default function NoiseCancellingPage() {
           viewport={{ once: true, margin: "-100px" }}
           className="relative z-10 max-w-4xl mx-auto text-center p-12 md:p-20 border border-white/10 rounded-[3rem] bg-white/[0.01] backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.5)]"
         >
-          <div className="text-[#00d6ff] text-4xl mb-6">📍</div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">Adaptive Sound Control</h2>
           <p className="text-lg md:text-xl text-white/60 leading-relaxed">
             A smart function that senses where you are and what you're doing, then adjusts ambient sound settings for the ideal listening experience. Over time, it learns your behavior and recognizes locations you frequently visit—like your workplace or your favorite café.
